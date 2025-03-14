@@ -35,7 +35,7 @@ const CombinationLock = ({ combination, NextScreen }) => {
     <div className="flex flex-col items-center mx-auto mt-10 bg-amber-100 w-96 p-4 rounded-lg border-2 border-amber-600">
       {!unlocked ? (
         <div>
-          <div className="text-3xl font-bold border p-4 text-center bg-amber-400 rounded-lg mb-2 border border-amber-600">
+          <div className="text-3xl font-bold  p-4 text-center bg-amber-400 rounded-lg mb-2 border border-amber-600">
             {input || ""}
           </div>
           <div className="grid grid-cols-3 gap-2">
@@ -43,7 +43,7 @@ const CombinationLock = ({ combination, NextScreen }) => {
               <button
                 key={num}
                 onClick={() => handleButtonClick(num)}
-                className="border p-4 text-xl bg-amber-400 hover:bg-amber-600 hover:transition-colors border border-amber-600 rounded-lg w-16 h-16"
+                className=" p-4 text-xl bg-amber-400 hover:bg-amber-600 hover:transition-colors border border-amber-600 rounded-lg w-16 h-16"
               >
                 {num}
               </button>
